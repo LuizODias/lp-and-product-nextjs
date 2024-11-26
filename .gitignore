@@ -1,0 +1,33 @@
+### Node ###
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.prod 
+
+# Dependency directories
+node_modules
+.npmrc
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+### Next.js ###
+.next
+/.next/
+/out/
+
+### Emacs ###
+
+# Temp files
+*~
+\#*\#
+.\#*

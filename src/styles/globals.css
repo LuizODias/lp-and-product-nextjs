@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.body-tiny {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.metal-info {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.body-large-regular {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.body-large-semi {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.body-small-regular {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.body-small-semi {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.button-large {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.button-small {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+img {
+  max-width: none;
+}
+
+.grid-period {
+  grid-template-columns: 59px 93px;
+}
+
+p .hero-shadow {
+  text-shadow: 1px 2px 0px rgba(255, 255, 255, 1);
+}
+
+.input-container input {
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  position: relative;
+  width: 100%;
+}
+
+.input-icon-invalid {
+  background: url("") no-repeat center;
+}
+
+.input-icon-valid {
+  background: url("") no-repeat center;
+}
+
+input[type="month"]::-webkit-inner-spin-button,
+input[type="month"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.input-credentials {
+  box-shadow: 1px 1px 2px 0px rgba(68, 77, 90, 0.1);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.shadow-cookies {
+  box-shadow: 0px 0px 3px 0px rgba(68, 77, 90, 0.8);
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  border: 1px solid #C2CDD2;
+  border-radius: 4px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: #2D71DF;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked {
+  border: 1px solid #2D71DF;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #10284E;
+  margin: 0 82px;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "cv11", "salt", "ss01", "ss03", "cv01", "cv02", "cv03", "cv04", "cv05", "cv06", "cv09", "cv10";
+  min-height: 100vh;
+}
+
+.section-tab::-webkit-scrollbar {
+  display: none;
+}
+
+.section-tab {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.sticky-section {
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.screen-tab::-webkit-scrollbar {
+  display: none;
+}
+
+.screen-tab {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.linear-gradient {
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+@media (max-width: 767px) {
+  .linear-section-tab {
+    box-shadow: inset 30px 0px 24px #ffffff;
+  }
+
+  .linear-section-tab-right {
+    box-shadow: inset -30px 0px 24px #ffffff;
+  }
+}
+
+.category-pessoafisica {
+  background-color: #E6EDFB;
+  color: #2D71DF;
+}
+
+.category-pessoajuridica {
+  background-color: #E1DBFF;
+  color: #751AFF;
+}
+
+.category-integracao {
+  background-color: #C3EED4;
+  color: #006161;
+}

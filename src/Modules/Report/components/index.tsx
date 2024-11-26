@@ -1,0 +1,6 @@
+export * from './BarChart'
+export * from './DetailReport'
+export * from './GeneralView'
+export * from './PieChart'
+export * from './ScreenTab'
+export * from './TableReport'
